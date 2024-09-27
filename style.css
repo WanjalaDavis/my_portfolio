@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: aliceblue;
+}
+
+header {
+    background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.contact-box {
+    text-align: center;
+    align-content: center;
+    background: rgb(175, 170, 170);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6f86d6;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #6f86d6;
+    text-decoration: none;
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background: #6f86d6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #48c6ef;
+}
+
+.dashboard {
+    position: relative;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background: #6f86d6;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.menu {
+    display: none;
+    background: white;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover {
+    background: #6f86d6;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}

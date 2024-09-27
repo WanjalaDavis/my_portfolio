@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanjalaDavisHome</title>
+    <link rel="stylesheet" href="stylesss.css">
+    <link rel="icon" href="images/favicon.jpg" type="images.jpg">
+</head>
+<body>
+        <header>
+   <div class="dashboard">
+    <div class="menu-toggle" onclick="toggleMenu()">
+        &#9776;
+    </div>
+    <div class="menu" id="menu">
+        <a href="index.html">HOME</a>
+        <a href="jabout.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+    </div>
+   </div>
+
+   <script>
+
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        }
+        else {
+            menu.style.display = 'block';
+        }                                 
+    }
+    </script>
+
+            <h1>Welcome to Wanjala Davis's Portfolio</h1>
+            <p>Bachelor of Science in Applied Computer Science</p>
+        </header>
+    
+        <section class="introduction">
+            <h2>About Me</h2>
+            <p>Hello! I’m Wanjala Davis, a dedicated student at Kisii University pursuing a Bachelor of Science in Applied Computer Science. I have a passion for technology and a strong interest in software development, web design, and data analysis.</p>
+        </section>
+    
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, JavaScript</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Database Management: MySQL, MongoDB</li>
+                <li>Data Analysis: Pandas, NumPy</li>
+                <li>Version Control: Git, GitHub</li>
+            </ul>
+        </section>
+    
+        <section class="projects">
+            <h2>Projects</h2>
+            <p>Here are a few projects I have worked on:</p>
+            <ul>
+                <li><strong>Personal Portfolio Website:</strong> A responsive website showcasing my skills and projects.</li>
+                <li><strong>Online Quiz Application:</strong> A web application for creating and taking quizzes, built with React and Node.js.</li>
+                <li><strong>Data Visualization Dashboard:</strong> A dashboard that visualizes data using charts and graphs, created with Python and Matplotlib.</li>
+            </ul>
+        </section>
+    
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch, feel free to reach out via:</p>
+            <p><strong>Email:</strong> <a href="mailto:wanjaladevis81@gmail.com">wanjaladevis81@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/WanjalaDavis" target="_blank">WanjalaDavis</a></p>
+        </section>
+    
+        <footer>
+            <p>© 2024 Wanjala Davis. All rights reserved.</p>
+        </footer>
+        
+</body>
+</html>

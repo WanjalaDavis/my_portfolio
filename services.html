@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutWanjalaPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.jpg" type="images/jpeg">
+</head>
+<body> 
+        <header>
+            <div class="Dashboard">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html">DASHBOARD</a>
+                <a href="jabout.html">ABOUT</a>
+                <a href="services.html">SERVICES</a>
+            </div>            
+            </div>
+            <script>
+
+                function toggleMenu() {
+                    const menu = document.getElementById('menu');
+                    if (menu.style.display === 'block') {
+                        menu.style.display = 'none';
+                    }
+                    else {
+                        menu.style.display = 'block';
+                    }                                 
+
+                }
+            </script>
+            <h1>MY SERVICES</h1>
+            <p>Projects I've Worked On</p>
+        </header>
+    
+        <section class="projects">
+            <h2>FEATURED PROJECTS</h2>
+            
+            <div class="project-container">
+                <div class="project">
+                    <img src="images/wesite.jfif" alt="Project 1">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>A responsive website showcasing my skills and projects, built using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project">
+                    <img src="images/quiz app.jpg" alt="Project 2">
+                    <h3>Online Quiz Application</h3>
+                    <p>A web application for creating and taking quizzes, developed with React and Node.js.</p>
+                </div>
+                <div class="project">
+                    <img src="images/data visualization.jpg" alt="Project 3">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>A dashboard that visualizes data using charts and graphs, created with Python and Matplotlib.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="registration">
+            <h2>REGISTER WITH US FOR ONLINE CLASS</h2>
+          
+            <form method="POST" action="registration_script.php">
+                <input type="text" name="full_name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="mobile_number" placeholder="Mobile Number">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Register">
+            </form>
+            
+            
+        </section>
+    <script>
+document.getElementById('registration-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    if (password.length < 8) {
+        alert('Password must be at least 8 characters long.');
+        return;
+    }
+
+    alert('Registration successful!');
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
+    </script>
+        <footer>
+            <p>© 2024 Wanjala Davis. All rights reserved.</p>
+        </footer>
+    
+        <script>
+            document.getElementById('registration-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Registration successful!');
+                // Here you would typically handle registration logic
+                // For example, sending the data to a server
+            });
+        </script>
+    
+</body>
+</html>
